@@ -1,8 +1,8 @@
 # One entry per author. A post selects its author with `author: <key>`.
 # Optional fields: avatar (path to a photo), bio, location, links.
 dusan-jansky:
-  name: "Dušan Jánsky"
-  bio: "Software developer"
+  name: "Ing. Dušan Jánsky"
+  bio: "Main developer of the DOSPORTAL platform."
   avatar: "/assets/images/authors/cisar2218.jpg"
   links:
     - label: "GitHub"
@@ -13,7 +13,7 @@ dusan-jansky:
       url: "https://www.linkedin.com/in/dusan-jansky-6aab69239/"
 
 jakub-kakona:
-  name: "Jakub Kákona"
+  name: "Ing. Jakub Kákona Ph.D."
   avatar: "/assets/images/authors/kaklik.jpg"
   location: "Czech Republic"
   links:
