@@ -1,0 +1,89 @@
+# This file is *NOT* reloaded automatically by `jekyll serve`.
+# Restart the server after changing it.
+
+remote_theme: "mmistakes/minimal-mistakes@4.28.1"
+
+# Site settings
+title: Universal Scientific Technologies
+masthead_title: Blog
+description: News and stories from Universal Scientific Technologies.
+url: "https://blog.ust.cz" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+logo: /assets/images/ust-logo.png
+locale: en-US
+
+# Brand identity, consumed by assets/css/main.scss and _includes/head/custom.html.
+brand:
+  font: '-apple-system, BlinkMacSystemFont, Roboto, "Segoe UI", "Helvetica Neue", Arial, sans-serif'
+  font_url: ""
+  primary: "#e47a1a"
+  link: "#2f7d95"
+  masthead_bg: "#fff"
+  masthead_link: "#6f777d"
+  masthead_link_hover: "#3d4144"
+  footer_bg: "#f2f3f3"
+  footer_text: "#3d4144"
+  radius: "4px"
+
+# Default author, used for posts without `author:` and for the feed as a whole.
+# Posts select a person with `author: <key from _data/authors.yml>`.
+author:
+  name: "Universal Scientific Technologies"
+  bio: "Universal Scientific Technologies s.r.o. team"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/UniversalScientificTechnologies"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://www.facebook.com/Universal-Scientific-Technologies-sro-188826147835467"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:info@ust.cz"
+
+permalink: /:year/:month/:day/:title/
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# paginate
+paginate: 10
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+category_archive:
+  type: liquid
+  path: /category/
+tag_archive:
+  type: liquid
+  path: /tag/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      show_date: true
+      read_time: true
+      share: false
+      related: true
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor/

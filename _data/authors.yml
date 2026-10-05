@@ -1,0 +1,37 @@
+# One entry per author. A post selects its author with `author: <key>`.
+# Optional fields: avatar (path to a photo), bio, location, links.
+dusan-jansky:
+  name: "Dušan Jánsky"
+  bio: "Software developer"
+  avatar: "/assets/images/authors/cisar2218.jpg"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/cisar2218"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/dusan-jansky-6aab69239/"
+
+jakub-kakona:
+  name: "Jakub Kákona"
+  avatar: "/assets/images/authors/kaklik.jpg"
+  location: "Czech Republic"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/kaklik"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jakub-kakona/"
+    - label: "X"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://twitter.com/kaklik"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook"
+      url: "https://www.facebook.com/jkakona/"
+    - label: "ResearchGate"
+      icon: "fab fa-fw fa-researchgate"
+      url: "https://www.researchgate.net/profile/Jakub-Kakona"
+    - label: "ust.cz"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.ust.cz"

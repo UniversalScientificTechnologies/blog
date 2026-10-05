@@ -1,0 +1,26 @@
+{% if site.adsense_client %}
+<meta name="google-adsense-account" content="{{ site.adsense_client }}">
+{% endif %}
+<link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
+{% if site.brand.font_url and site.brand.font_url != "" %}
+<link rel="stylesheet" href="{{ site.brand.font_url }}">
+{% endif %}
+
+{% if page.mathjax %}
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    tex2jax: { inlineMath: [["$","$"],["\\(","\\)"]] },
+    "HTML-CSS": {
+      linebreaks: { automatic: true, width: "container" }
+    }
+});
+</script>
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+{% endif %}
+{% if site.adsense_client %}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense_client }}"
+     crossorigin="anonymous"></script>
+{% endif %}

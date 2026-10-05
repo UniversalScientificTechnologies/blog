@@ -1,0 +1,66 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+// Brand values come from the `brand` block in _config.yml
+{% assign b = site.brand %}
+$sans-serif: {{ b.font }};
+$primary-color: {{ b.primary }};
+$link-color: {{ b.link }};
+$masthead-link-color: {{ b.masthead_link }};
+$masthead-link-color-hover: {{ b.masthead_link_hover }};
+$footer-background-color: {{ b.footer_bg }};
+$border-radius: {{ b.radius }};
+
+@import "minimal-mistakes/skins/default"; // skin
+@import "minimal-mistakes"; // main partials
+
+.masthead,
+.greedy-nav,
+.greedy-nav .hidden-links {
+  background: {{ b.masthead_bg }};
+}
+
+.greedy-nav .hidden-links::after {
+  border-bottom-color: {{ b.masthead_bg }};
+}
+
+.site-logo img {
+  max-height: 2.6rem;
+}
+
+// Links: text colour with an accent underline
+.page__content a,
+.archive__item-title a {
+  text-decoration-color: $primary-color;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.15em;
+}
+
+.page__footer {
+  color: {{ b.footer_text }};
+
+  a,
+  .page__footer-follow li,
+  .page__footer-copyright,
+  .social-icons .fab,
+  .social-icons .fas {
+    color: inherit;
+  }
+}
+
+// Author shown in post listings, see _includes/page__meta.html
+.archive__item-author {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+
+  img {
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+  }
+}
